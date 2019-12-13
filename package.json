@@ -1,8 +1,8 @@
 {
-  "name": "particl-insight-ui",
-  "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the particl network and build your own services with it.",
+  "name": "capricoinplus-insight-ui",
+  "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the capricoinplus network and build your own services with it.",
   "version": "0.4.1",
-  "repository": "git://github.com/particl/particl-insight.git",
+  "repository": "https://github.com/Capricoinofficial/capricoinplus-insight-ui.git",
   "contributors": [
     {
       "name": "Matias Alejo Garcia",
@@ -26,21 +26,21 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/particl/particl-insight-ui/issues"
+    "url": "https://github.com/Capricoinofficial/capricoinplus-insight-ui/issues"
   },
-  "homepage": "https://github.com/particl/particl-insight-ui",
+  "homepage": "https://github.com/Capricoinofficial/capricoinplus-insight-ui",
   "license": "MIT",
   "keywords": [
     "insight",
     "blockchain",
     "blockexplorer",
-    "particl",
+    "Capricoin+",
     "bitcore",
     "front-end"
   ],
   "bitcoreNode": "bitcore-node",
   "insightConfig": {
-    "apiPrefix": "particl-insight-api",
+    "apiPrefix": "api",
     "routePrefix": ""
   },
   "scripts": {

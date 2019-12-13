@@ -1,4 +1,4 @@
-/* Sticky footer styles
+﻿/* Sticky footer styles
 -------------------------------------------------- */
 @charset "UTF-8";
 
@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 /* Styling for the ngProgress itself */
 #ngProgress {
-  background-color: #6C9032 !important;
+  background-color: #c09b64 !important;
   box-shadow: none !important;
   color: #373D42 !important;
   height: 3px !important;
@@ -103,7 +103,7 @@ margin-left: 0;
 }
 
 .table-hover>tbody>tr:hover>td, .table-hover>tbody>tr:hover>th {
-  background-color: #F0F7E2;
+  background-color: #f3ead8;
 }
 .navbar { min-height: 64px; }
 .navbar-default .navbar-toggle { 
@@ -115,7 +115,7 @@ margin-left: 0;
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {background-color: #373D42;}
 
 .navbar-default {
-  background-color: #02E8AF;
+  background-color: #DFAD47;
   margin: 0;
   border: 0;
 }
@@ -128,7 +128,7 @@ margin-left: 0;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus {
-  background-color: #6C9032;
+  background-color: #c09b64;
   color: #fff;
 }
 
@@ -201,14 +201,14 @@ margin-left: 0;
 #search { color: #fff; }
 
 #search::-webkit-input-placeholder {
-  color: #BCDF7E;
+  color: #cccccc;
   font-family: 'Ubuntu', sans-serif;
   font-style: italic;
   font-weight: 100;
 }
 
 #search::-moz-placeholder {
-  color: #BCDF7E;
+  color: #cccccc;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 100;
 }
@@ -316,8 +316,8 @@ margin-left: 0;
   border-radius: 2px;
 }
 .btn-primary {
-  background-color: #02E8AF;
-  border: 2px solid #76AF0F;
+  background-color: #DFAD47;
+  border: 2px solid #f6dab1;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active,
@@ -340,8 +340,8 @@ margin-left: 0;
 }
 
 .btn-success {
-  background-color: #2FA4D7;
-  border: 2px solid #237FA7;
+  background-color: #f6dab1;
+  border: 2px solid #DFAD47;
 }
 
 .btn-danger {
@@ -363,7 +363,7 @@ margin-left: 0;
 }
 
 .txvalues-primary {
-  background-color: #02E8AF;
+  background-color: #DFAD47;
   color: #000;
 }
 
@@ -387,7 +387,7 @@ margin-left: 0;
   font-size: 14px;
   font-weight: normal;
 }
-.progress-bar-info { background-color: #02E8AF; }
+.progress-bar-info { background-color: #DFAD47; }
 .progress-bar { color: #000; }
 
 /* Set the fixed height of the footer here */
@@ -461,7 +461,7 @@ margin-left: 0;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-top: none;
-  border: 1px solid #64920F;
+  border: 1px solid #dfad47;
   padding: 10px 20px;
   position: absolute;
   text-align: center;
@@ -669,7 +669,7 @@ margin-left: 0;
 }
 
 a.v_highlight_more {
-  background-color: #F0F7E2;
+  background-color: #f3ead8;
   color: #333;
 }
 
@@ -828,7 +828,7 @@ a.v_highlight_more {
   }
   .txvalues-primary {
     background: none;
-    color: #02E8AF;
+    color: #DFAD47;
   }
   .txvalues-default {
     background: none;
