@@ -133,7 +133,6 @@ msgstr "共收到"
 msgid "Total Sent"
 msgstr "共发送"
 
-#No. Transactions: means number of transactions
 msgid "No. Transactions" 
 msgstr "交易号"
 
