@@ -14,19 +14,28 @@ angular.module('insight.system').controller('FooterController',
 
     $scope.version = _getVersion();
 
-    $scope.availableLanguages = [{
-      name: 'Deutsch',
-      isoCode: 'de_DE',
-    }, {
-      name: 'English',
-      isoCode: 'en',
-    }, {
-      name: 'Spanish',
-      isoCode: 'es',
-    }, {
-      name: 'Japanese',
-      isoCode: 'ja',
-    }];
+    $scope.availableLanguages = [
+      // {
+      //   name: 'Deutsch',
+      //   isoCode: 'de_DE',
+      // }, 
+      {
+        name: 'English',
+        isoCode: 'en',
+      }, 
+      // {
+      //   name: 'Spanish',
+      //   isoCode: 'es',
+      // }, 
+      // {
+      //   name: 'Japanese',
+      //   isoCode: 'ja',
+      // }, 
+      {
+        name: '中文',
+        isoCode: 'zh-CN',
+      }
+    ];
 
     $scope.setLanguage = function(isoCode) {
       gettextCatalog.currentLanguage = $scope.defaultLanguage = defaultLanguage = isoCode;

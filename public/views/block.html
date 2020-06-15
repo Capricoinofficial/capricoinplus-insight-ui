@@ -12,7 +12,7 @@
               <h3 class="text-left"><span translate>Block</span> #{{block.height}}</h3>
             </div>
             <p class="col-md-6 ellipsis text-left">
-                <strong>Hash</strong> {{block.hash}}
+                <strong translate>Hash</strong> {{block.hash}}
             </p>
             <div class="col-md-1 text-left">
                 <span class="btn-copy" clip-copy="block.hash"></span>
@@ -31,13 +31,13 @@
       </a>
     </div>
   </div>
-  <h1>Block #{{block.height}}</h1>
+  <h1><span translate>Block</span> #{{block.height}}</h1>
   <div class="text-muted" data-ng-if="!block.hash">
     <span translate>Loading Block Information</span>  <span class="loader-gif"></span>
   </div>
   <div data-ng-if="block.hash">
     <div class="well well-sm ellipsis">
-      <strong>BlockHash</strong> 
+      <strong translate>BlockHash</strong> 
       <span class="txid text-muted">{{block.hash}}</span>
       <span class="btn-copy" clip-copy="block.hash"></span>
     </div>
@@ -53,16 +53,16 @@
           <tr>
             <td><strong translate>Height</strong></td>
             <td class="text-right text-muted">{{block.height}}
-              <span data-ng-show="block.isMainChain" class="text-success">(Mainchain)</span>
-              <span data-ng-show="!block.isMainChain" class="text-danger"> <span class="glyphicon glyphicon-warning-sign"></span> (Orphaned)</span>
+              <span data-ng-show="block.isMainChain" class="text-success" translate>(Mainchain)</span>
+              <span data-ng-show="!block.isMainChain" class="text-danger"> <span class="glyphicon glyphicon-warning-sign"></span translate> (Orphaned)</span>
             </td>
           </tr>
           <tr>
             <td><strong translate>Timestamp</strong></td>
-            <td class="text-right text-muted">{{block.time * 1000 | date:'medium'}}</td>
+            <td class="text-right text-muted">{{block.time * 1000 | date:'d/M/yyyy, H:mm:ss' }}</td>
           </tr>
           <tr>
-            <td><strong>Merkle Root</strong></td>
+            <td><strong translate>Merkle Root</strong></td>
             <td class="text-right text-muted">
               <div class="ellipsis">
                 <span class="btn-copy" clip-copy="block.merkleroot"></span>
@@ -71,7 +71,7 @@
             </td>
           </tr>
           <tr>
-            <td><strong>Witness Merkle Root</strong></td>
+            <td><strong translate>Witness Merkle Root</strong></td>
             <td class="text-right text-muted">
               <div class="ellipsis">
                 <span class="btn-copy" clip-copy="block.witnessmerkleroot"></span>
@@ -107,7 +107,7 @@
             <td class="text-right text-muted">{{block.difficulty}}</td>
           </tr>
           <tr>
-            <td> <strong>Bits</strong></td>
+            <td> <strong translate>Bits</strong></td>
             <td class="text-right text-muted">{{block.bits}}</td>
           </tr>
           <tr>

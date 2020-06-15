@@ -11,11 +11,11 @@
   <div class="col-xs-5 col-md-4 text-right text-muted">
     <div data-ng-show="tx.firstSeenTs">
       <span translate>first seen at</span>
-      <time>{{tx.firstSeenTs * 1000 | date:'medium'}}</time>
+      <time>{{tx.firstSeenTs * 1000 | date:'d/M/yyyy, H:mm:ss'}}</time>
     </div>
     <div data-ng-show="tx.blocktime && !tx.firstSeenTs">
       <span translate>staked</span>
-      <time>{{tx.time * 1000 | date:'medium'}}</time>
+      <time>{{tx.time * 1000 | date:'d/M/yyyy, H:mm:ss'}}</time>
     </div>
   </div>
 </div>
@@ -80,7 +80,7 @@
                 <span data-ng-show="vin.notAddr">{{vin.addr}}</span>
                 <a href="address/{{vin.addr}}" data-ng-show="!vin.notAddr">{{vin.addr}}</a>
               </div>
-              <div class="ellipsis" data-ng-show="vin.type == 'anon'">
+              <div class="ellipsis" data-ng-show="vin.type == 'anon'" translate>
                 Anonymous, {{vin.num_inputs}}, {{vin.ring_size}}
               </div>
               <div data-ng-show="vin.unconfirmedInput" class="text-danger">
@@ -99,7 +99,7 @@
             </div> <!-- END OF PANEL BODY -->
           </div> <!-- END OF PANEL-DEFAULT -->
           <div class="small" style="margin-left:0.7em; word-wrap:break-word;" data-ng-class="{true: 'v_highlight', false: ''}[from_vin == true && v_index == vin.n]" >
-            <p><strong>Confirmations:</strong> {{vin.confirmations}}</p>
+            <p><strong translate>Confirmations:</strong> {{vin.confirmations}}</p>
             <span data-ng-show="vin.scriptSig.length > 1" >
             <p><strong>scriptSig</strong></p>
               <div data-ng-repeat="item in vin.scriptSig.asm | split:' '" class="">
@@ -107,7 +107,7 @@
                 <p class="btn-copy" clip-copy="item"></p>
               </div>
             </span>
-              <p><strong>witness</strong></p>
+              <p><strong translate>witness</strong></p>
               <div data-ng-repeat="item in vin.witnessStack" class="">
                 <p class="col-md-11 ellipsis text-muted">{{item}}</p>
                 <p class="btn-copy" clip-copy="item"></p>
@@ -170,7 +170,7 @@
               <div class="pull-right">
                 {{vout.data.length / 2}} <span translate>bytes</span>
               </div>
-              <div class="ellipsis">
+              <div class="ellipsis" translate>
                 Data output
               </div>
             </div>
@@ -211,7 +211,7 @@
               <div class="pull-right">
                 {{vout.data.length / 2}} <span translate>bytes</span>
               </div>
-              <div class="ellipsis">
+              <div class="ellipsis" translate>
                 Data output
               </div>
             </div>
@@ -223,7 +223,7 @@
                 <span class="text-muted">{{vout.scriptPubKey.type}}</span>
               </p>
               <div class="small">
-                <p><strong>scriptPubKey</strong></p>
+                <p><strong translate>scriptPubKey</strong></p>
                 <span class="col-md-11 text-muted ellipsis">{{vout.scriptPubKey.asm}}</span>
                 <span class="btn-copy col-md-1" clip-copy="vout.scriptPubKey.asm"></span>
               </div>
@@ -235,34 +235,33 @@
                 <span class="text-muted">{{vout.scriptPubKey.type}}</span>
               </div>
               <div class="small">
-                <strong>scriptPubKey</strong>
+                <strong translate>scriptPubKey</strong>
                 <span class="col-md-11 text-muted ellipsis outputdetail">{{vout.scriptPubKey.asm}}</span>
                 <span class="btn-copy col-md-1" clip-copy="vout.scriptPubKey.asm"></span>
               </div>
               <div class="small">
-                <strong>Commitment</strong>
+                <strong translate>Commitment</strong>
                 <span class="col-md-11 text-muted ellipsis outputdetail">{{vout.valueCommitment}}</span>
                 <span class="btn-copy col-md-1" clip-copy="vout.valueCommitment"></span>
               </div>
-
               <div class="small">
-                <strong>Rangeproof</strong>
-                <span class="col-md-11 text-muted ellipsis">Bytes {{vout.rp_size}}, Exponent {{vout.rp_exponent}}, Bits {{vout.rp_mantissa}}</span>
-                <span class="col-md-11 text-muted ellipsis outputdetail">Min Value {{vout.rp_min_value}}, Max Value {{vout.rp_max_value}}</span>
+                <strong translate>Rangeproof</strong>
+                <span class="col-md-11 text-muted ellipsis" translate>Bytes {{vout.rp_size}}, Exponent {{vout.rp_exponent}}, Bits {{vout.rp_mantissa}}</span>
+                <span class="col-md-11 text-muted ellipsis outputdetail" translate>Min Value {{vout.rp_min_value}}, Max Value {{vout.rp_max_value}}</span>
               </div>
           </div>
 
           <div data-ng-show="vout.type == 'anon'" style="padding-left: 0.7em; padding-bottom: 5em;" data-ng-class="{true: 'v_highlight', false: ''}[from_vout == true && v_index == vout.n]">
               <div class="small">
-                <strong>Commitment</strong>
+                <strong translate>Commitment</strong>
                 <span class="col-md-11 text-muted ellipsis outputdetail">{{vout.valueCommitment}}</span>
                 <span class="btn-copy col-md-1" clip-copy="vout.valueCommitment"></span>
               </div>
 
               <div class="small">
-                <strong>Rangeproof</strong>
-                <span class="col-md-11 text-muted ellipsis">Bytes {{vout.rp_size}}, Exponent {{vout.rp_exponent}}, Bits {{vout.rp_mantissa}}</span>
-                <span class="col-md-11 text-muted ellipsis outputdetail">Min Value {{vout.rp_min_value}}, Max Value {{vout.rp_max_value}}</span>
+                <strong translate>Rangeproof</strong>
+                <span class="col-md-11 text-muted ellipsis" translate>Bytes {{vout.rp_size}}, Exponent {{vout.rp_exponent}}, Bits {{vout.rp_mantissa}}</span>
+                <span class="col-md-11 text-muted ellipsis outputdetail" translate>Min Value {{vout.rp_min_value}}, Max Value {{vout.rp_max_value}}</span>
               </div>
           </div>
 
@@ -273,7 +272,7 @@
               </p>
 
               <div class="small">
-              <p><strong>Decoded</strong></p>
+              <p><strong translate>Decoded</strong></p>
               <p class="col-md-11" data-ng-show="vout.v && vout.v.length > 0" data-ng-repeat="v in vout.v">
                 <strong translate>{{v.name}}</strong>
                 <span data-ng-show="v.name != 'fee'" class="text-muted">{{v.value}}</span>
@@ -284,12 +283,12 @@
 
         </div>
         <div class="text-right">
-          <button type="button" class="btn btn-default btn-sm" data-ng-show="(from_vout) && tx.vout.length > 1" data-ng-disabled="fromVoutCollapsed" data-ng-click="currentOutExpanded=0; sizeOutExpanded=tx.vout.length;fromVoutCollapsed=1">Show output #{{ v_index }}</button>
-          <button type="button" class="btn btn-default btn-sm" data-ng-show="(from_vout) && tx.vout.length > 1" data-ng-disabled="!fromVoutCollapsed" data-ng-click="currentOutExpanded=0; sizeOutExpanded=tx.vout.length;fromVoutCollapsed=0">Show all</button>
+          <button type="button" class="btn btn-default btn-sm" data-ng-show="(from_vout) && tx.vout.length > 1" data-ng-disabled="fromVoutCollapsed" data-ng-click="currentOutExpanded=0; sizeOutExpanded=tx.vout.length;fromVoutCollapsed=1" translate>Show output #{{ v_index }}</button>
+          <button type="button" class="btn btn-default btn-sm" data-ng-show="(from_vout) && tx.vout.length > 1" data-ng-disabled="!fromVoutCollapsed" data-ng-click="currentOutExpanded=0; sizeOutExpanded=tx.vout.length;fromVoutCollapsed=0" translate>Show all</button>
         </div>
         <div class="showmore_collapse text-left" data-ng-show="tx.vout.length > 5 && !fromVoutCollapsed" data-ng-class="{ 'hidden': !itemsExpanded}">
-          <button type="button" class="btn btn-info btn-sm" ng-hide="sizeOutExpanded != tx.vout.length" ng-click="currentOutExpanded=0; sizeOutExpanded=5"><i class="glyphicon glyphicon-chevron-up"></i>Show less</button>
-          <button type="button" class="btn btn-info btn-sm" ng-hide="currentOutExpanded >= tx.vout.length/sizeOutExpanded - 1" ng-click="currentOutExpanded=0; sizeOutExpanded=tx.vout.length"><i class="glyphicon glyphicon-chevron-down"></i> Show more</button>
+          <button type="button" class="btn btn-info btn-sm" ng-hide="sizeOutExpanded != tx.vout.length" ng-click="currentOutExpanded=0; sizeOutExpanded=5" translate><i class="glyphicon glyphicon-chevron-up"></i>Show less</button>
+          <button type="button" class="btn btn-info btn-sm" ng-hide="currentOutExpanded >= tx.vout.length/sizeOutExpanded - 1" ng-click="currentOutExpanded=0; sizeOutExpanded=tx.vout.length"><i class="glyphicon glyphicon-chevron-down"></i><span translate>Show more</span></button>
         </div>
       </div>
     </div>

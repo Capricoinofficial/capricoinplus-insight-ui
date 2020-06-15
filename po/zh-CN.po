@@ -1,0 +1,529 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Insight\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Meijie\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: zh-CN\n"
+
+#: public/views/includes/connection.html
+msgid "Error!"
+msgstr "错误！"
+
+msgid "Can't connect to capricoinplusd to get live updates from the p2p network. (Tried connecting to capricoinplusd at {{host}}:{{port}} and failed.)"
+msgstr "无法连接capricoinplusd，不能从对等网络获取实时更新。（已尝试在 {{host}}:{{port}} 连接capricoinplusd，但失败了。）"
+
+msgid "Can't connect to insight server. Attempting to reconnect..."
+msgstr "无法连接Insight服务器。正在尝试重新连接……"
+
+msgid "Can't connect to internet. Please, check your connection."
+msgstr "无法连接互联网，请查看您的网络讯号。"
+
+#: public/views/includes/infoStatus.html
+
+msgid "Loading..."
+msgstr "加载中……"
+
+#: public/views/includes/search.html
+
+msgid "No matching records found!"
+msgstr "未找到匹配的记录！"
+
+msgid "Search for block, transaction or address"
+msgstr "查找区块、交易或地址"
+
+#: public/views/includes/transaction.html
+
+msgid "There are no transactions involving this address."
+msgstr "没有涉及该地址的交易。"
+
+msgid "Loading Transactions..."
+msgstr "加载交易……"
+
+#: public/views/includes/tx.html
+
+msgid "first seen at"
+msgstr "首次查看于"
+
+msgid "staked"
+msgstr "已托管"
+
+msgid "No Inputs (Newly Generated Coins)"
+msgstr "无输入（新生成的币）"
+
+msgid "Blinded"
+msgstr "隐秘的"
+
+msgid "Incoherence in levelDB detected:"
+msgstr "在levelDB中检测到："
+
+msgid "Double spent attempt detected. From tx:"
+msgstr "检测到尝试双重支付，从TX："
+
+msgid "Show less"
+msgstr "显示较少"
+
+msgid "Show more"
+msgstr "显示更多"
+
+msgid "(Input unconfirmed)"
+msgstr "（输入未确认）"
+
+msgid "Show input"
+msgstr "显示输入"
+
+msgid "Show all"
+msgstr "显示全部"
+
+msgid "bytes"
+msgstr "字节"
+
+msgid "Type"
+msgstr "类型"
+
+msgid "Hex"
+msgstr "十六进制"
+
+msgid "Included in Block"
+msgstr "包含在区块内"
+
+msgid "Fee"
+msgstr "费率"
+
+msgid "Reward"
+msgstr "奖励"
+
+msgid "Confirmations"
+msgstr "确认数量"
+
+msgid "Unconfirmed Transaction!"
+msgstr "交易未确认！"
+
+#: public/views/includes/404.html
+
+msgid "404 Page not found :("
+msgstr "404 页面不存在 :("
+
+msgid "Go to home"
+msgstr "返回主页"
+
+#: public/views/address.html
+
+msgid "Address"
+msgstr "地址"
+
+msgid "Final Balance"
+msgstr "最终余额"
+
+msgid "Loading Address Information"
+msgstr "加载地址信息"
+
+msgid "Summary <small>confirmed</small>"
+msgstr "摘要 <small>已确认</small>"
+
+msgid "Total Received"
+msgstr "共收到"
+
+msgid "Total Sent"
+msgstr "共发送"
+
+#No. Transactions: means number of transactions
+msgid "No. Transactions" 
+msgstr "交易号"
+
+msgid "Unconfirmed"
+msgstr "未确认"
+
+msgid "Unconfirmed Txs Balance"
+msgstr "未确认的TXs数量"
+
+msgid "Transactions"
+msgstr "交易"
+
+#: public/views/block_list.html
+
+msgid "Blocks"
+msgstr "区块"
+
+msgid "staked on:"
+msgstr "托管于："
+
+msgid "Loading Selected Date..."
+msgstr "加载所选日期……"
+
+msgid "Today"
+msgstr "今天"
+
+msgid "by date.</span> {{detail}} {{before}}"
+msgstr "按日期</span> {{detail}} {{before}}"
+
+msgid "Height"
+msgstr "权重"
+
+msgid "Timestamp"
+msgstr "时间戳"
+
+msgid "Staked by"
+msgstr "负责托管地址"
+
+msgid "Size"
+msgstr "大小"
+
+msgid "Waiting for blocks..."
+msgstr "等待区块……"
+
+msgid "No blocks yet."
+msgstr "尚无区块"
+
+msgid "Lastest block from date"
+msgstr "最新的区块"
+
+msgid "Older blocks from this date"
+msgstr "时间较久的区块"
+
+#: public/views/block.html
+
+msgid "Block"
+msgstr "区块"
+
+msgid "Hash"
+msgstr "哈希"
+
+msgid "Loading Block Information"
+msgstr "加载区块信息"
+
+msgid "Summary"
+msgstr "总结"
+
+msgid "Number Of Transactions"
+msgstr "交易数量"
+
+msgid "Merkle Root"
+msgstr "Merkle树的根哈希值"
+
+msgid "Witness Merkle Root"
+msgstr "Merkle树的根哈希值见证"
+
+msgid "Previous Block"
+msgstr "上一个区块"
+
+msgid "Block Reward"
+msgstr "区块奖励"
+
+msgid "Loading"
+msgstr "加载"
+
+msgid "Difficulty"
+msgstr "难度"
+
+msgid "Bits"
+msgstr "位"
+
+msgid "Size (bytes)"
+msgstr "大小（字节）"
+
+msgid "Version"
+msgstr "版本"
+
+msgid "Next Block"
+msgstr "下一个区块"
+
+msgid "Status"
+msgstr "状态"
+
+#: public/views/index.html
+
+msgid "Latest Blocks"
+msgstr "最新区块"
+
+msgid "Age"
+msgstr "年龄"
+
+msgid "See all blocks"
+msgstr "查看所有区块"
+
+msgid "Latest Transactions"
+msgstr "最新交易"
+
+msgid "Value Out"
+msgstr "支出值"
+
+msgid "Waiting for transactions..."
+msgstr "等待交易……"
+
+msgid "About"
+msgstr "关于"
+
+msgid "<strong>insight</strong> is an <a href=\"https://insight.is/\" target=\"_blank\">open-source blockchain explorer</a> with complete REST and websocket APIs that can be used for writing web wallets and other apps  that need more advanced blockchain queries than provided by capricoinplusd RPC. Check out the <a href=\"https://github.com/Capricoinofficial/capricoinplus-insight-ui\" target=\"_blank\">source code</a>."
+msgstr "<strong>insight</strong> 是 <a href=\"https://insight.is/\" target=\"_blank\">开源区块链查询器</a> 具有完整的REST和websocket APIs，可用于编写网络钱包和其他比capricoinplusd RPC更高级的区块链查询应用程序。查看 <a href=\"https://github.com/Capricoinofficial/capricoinplus-insight-ui\" target=\"_blank\">源代码</a>."
+
+msgid "<strong>insight</strong> is still in development, so be sure to report any bugs and provide feedback for improvement at our <a href=\"https://github.com/Capricoinofficial/capricoinplus-insight-ui/issues\" target=\"_blank\">issue tracker</a>."
+msgstr "<strong>insight</strong>仍在开发中， 若您遇到任何错漏，请务必告知我们，感谢您为我们的改进提供反馈 <a href=\"https://github.com/Capricoinofficial/capricoinplus-insight-ui/issues\" target=\"_blank\">问题追踪器</a>."
+
+msgid "Powered by"
+msgstr "技术支持提供者为"
+
+#: public/views/message_verify.html
+
+msgid "Verify signed message"
+msgstr "验证签名的信息"
+
+msgid "Signature"
+msgstr "签名"
+
+msgid "Message"
+msgstr "信息"
+
+msgid "Verify"
+msgstr "验证"
+
+msgid "The message is verifiably from {{verification.address}}."
+msgstr "信息由{{verification.address}}验证。"
+
+msgid "The message failed to verify."
+msgstr "信息验证失败。"
+
+msgid "An error occured in the verification process."
+msgstr "验证过程中发生错误。"
+
+msgid "Error message:"
+msgstr "错误信息："
+
+msgid "Capricoin+ comes with a way of signing arbitrary messages."
+msgstr "Capricoin+自带对任意消息进行签名的方式。"
+
+msgid "This form can be used to verify that a message comes from a specific Capricoin+ address."
+msgstr "此表格可用于验证来自于特定Capricoin+地址的信息。"
+
+#: public/views/redirect.html
+
+msgid "Redirecting..."
+msgstr "重新导向……"
+
+#: public/views/status.html
+
+msgid "Application Status"
+msgstr "申请状态"
+
+msgid "Sync Status"
+msgstr "同步状态"
+
+msgid "Sync Progress"
+msgstr "同步过程"
+
+msgid "Complete"
+msgstr "完成"
+
+msgid "Current Sync Status"
+msgstr "当前同步状态"
+
+msgid "Start Date"
+msgstr "开始日期"
+
+msgid "Finish Date"
+msgstr "结束日期"
+
+msgid "Initial Block Chain Height"
+msgstr "初始区块链高度"
+
+msgid "Synced Blocks"
+msgstr "已同步的区块"
+
+msgid "Skipped Blocks (previously synced)"
+msgstr "跳过区块（之前已同步）"
+
+msgid "Sync Type"
+msgstr "同步类型"
+
+msgid "Last Block"
+msgstr "最后区块"
+
+msgid "Last Block Hash (capricoinplusd)"
+msgstr "最后区块哈希值（capricoinplusd）"
+
+msgid "Current Blockchain Tip (insight)"
+msgstr "当前区块Tip（insight）"
+
+msgid "node information"
+msgstr "节点信息"
+
+msgid "Protocol version"
+msgstr "协议版本"
+
+msgid "Money Supply"
+msgstr "资金供应"
+
+msgid "Time Offset"
+msgstr "时间偏移量"
+
+msgid "Connections to other nodes"
+msgstr "连接至其他节点"
+
+msgid "Staking Difficulty"
+msgstr "托管难度"
+
+msgid "Network"
+msgstr "网络"
+
+msgid "Proxy setting"
+msgstr "代理设定"
+
+msgid "Info Errors"
+msgstr "信息错误"
+
+#: public/views/transaction_sendraw.html
+
+msgid "Broadcast Raw Transaction"
+msgstr "广播原始交易"
+
+msgid "Raw transaction data"
+msgstr "原始交易数据"
+
+msgid "Raw transaction data must be a valid hexadecimal string."
+msgstr "原始交易数据必须为有效的十六进制字符串。"
+
+msgid "Send transaction"
+msgstr "发送交易"
+
+msgid "Transaction succesfully broadcast.<br>Transaction id: {{txid}}"
+msgstr "已成功广播交易。<br>交易ID为： {{txid}}"
+
+msgid "An error occured:<br>{{error}}"
+msgstr "发生错误：<br>{{error}}"
+
+msgid "This form can be used to broadcast a raw transaction in hex format over the Capricoin+ network."
+msgstr "此表格用于在Capricoin+网络以十六进制的格式广播原始交易。"
+
+
+#: public/views/transaction.html
+
+msgid "Transaction"
+msgstr "交易"
+
+msgid "Input"
+msgstr "输入"
+
+msgid "Output"
+msgstr "输出"
+
+msgid "Loading Transaction Details"
+msgstr "加载交易详情"
+
+msgid "Fee Rate"
+msgstr "费率"
+
+msgid "Received Time"
+msgstr "接收时间"
+
+msgid "Staked Time"
+msgstr "托管时间"
+
+msgid "Included in Block"
+msgstr "包含在区块"
+
+msgid "LockTime"
+msgstr "锁定时间"
+
+msgid "Coinbase"
+msgstr "Coinbase"
+
+msgid "Details"
+msgstr "详情"
+
+#: public/views/index-template.html
+
+msgid "Scan Code"
+msgstr "扫码"
+
+msgid "Get QR code"
+msgstr "获取二维码"
+
+msgid "verify message"
+msgstr "验证信息"
+
+msgid "broadcast transaction"
+msgstr "广播交易"
+
+msgid "Confirmations:"
+msgstr "确认数量:"
+
+msgid "Scan"
+msgstr "扫描"
+
+msgid "Anonymous, {{vin.num_inputs}}, {{vin.ring_size}}"
+msgstr "匿名, {{vin.num_inputs}}, {{vin.ring_size}}"
+
+msgid "witness"
+msgstr "见证"
+
+msgid "Data output"
+msgstr "数据输出"
+
+msgid "scriptPubKey"
+msgstr "scriptPubKey脚本"
+
+msgid "Commitment"
+msgstr "承诺"
+
+msgid "Rangeproof"
+msgstr "范围证明"
+
+msgid "Min Value {{vout.rp_min_value}}, Max Value {{vout.rp_max_value}}"
+msgstr "最小值 {{vout.rp_min_value}}, 最大值 {{vout.rp_max_value}}"
+
+msgid "Bytes {{vout.rp_size}}, Exponent {{vout.rp_exponent}}, Bits {{vout.rp_mantissa}}"
+msgstr "字节 {{vout.rp_size}}, 指数 {{vout.rp_exponent}}, 比特 {{vout.rp_mantissa}}"
+
+msgid "Decoded"
+msgstr "破译"
+
+msgid "(Mainchain)"
+msgstr "主链"
+
+msgid "main"
+msgstr "主链"
+
+msgid " (Orphaned)"
+msgstr " 孤立的"
+
+msgid "Block #{{block.height}}"
+msgstr "区块 #{{block.height}}"
+
+msgid "BlockHash"
+msgstr "区块哈希"
+
+msgid "Show output #{{ v_index }}"
+msgstr "显示输出 #{{ v_index }}"
+
+msgid "smsg-fee-rate"
+msgstr "安全信息费率"
+
+msgid "smsg-difficulty"
+msgstr "安全信息难度"
+
+msgid "by date."
+msgstr "按日期"
+
+msgid "finished"
+msgstr "已完成"
+
+msgid "syncing"
+msgstr "同步中"
+
+msgid "testnet"
+msgstr "测试网络"
+
+msgid "test"
+msgstr "测试网络"
+
+msgid "Close"
+msgstr "关闭"
+
+msgid "Conn"
+msgstr "连接个数"

@@ -24,7 +24,7 @@
           <tr>
             <td translate>Current Sync Status</td>
             <td class="text-right"> 
-            <span  data-ng-show="!sync.error">{{sync.status}}</span>
+            <span  data-ng-show="!sync.error">{{sync.status | translate}}</span>
             <span class="text-danger" data-ng-show="sync.error">
               <span  class="glyphicon glyphicon-warning-sign"></span>
               {{sync.error}}
@@ -33,11 +33,11 @@
           </tr>
           <tr>
             <td translate>Start Date</td>
-            <td class="text-right"><time title="{{sync.startTs | date:'medium'}}">{{humanSince(sync.startTs)}}</time></td>
+            <td class="text-right"><time title="{{sync.startTs | date:'d/M/yyyy, H:mm:ss'}}">{{humanSince(sync.startTs)}}</time></td>
           </tr>
           <tr data-ng-show="sync.endTs">
             <td translate>Finish Date</td>
-            <td class="text-right"><time title="{{sync.startTs | date:'medium'}}" >{{humanSince(sync.endTs)}}</time></td>
+            <td class="text-right"><time title="{{sync.startTs | date:'d/M/yyyy, H:mm:ss'}}" >{{humanSince(sync.endTs)}}</time></td>
           </tr>
           <tr>
             <td translate>Initial Block Chain Height</td>
@@ -110,7 +110,7 @@
           </tr>
           <tr>
             <td translate>Network</td>
-            <td class="text-right">{{info.network}}</td>
+            <td class="text-right">{{info.network | translate}}</td>
           </tr>
           <tr>
             <td translate>Proxy setting</td>
